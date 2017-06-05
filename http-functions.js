@@ -1,5 +1,6 @@
 module.exports = function getHTML (options, callback) {
     var chunks = '';
+    var https = require('https');   
   //console.log(callback);
   https.get(options, function (response){
   response.setEncoding('utf8');
