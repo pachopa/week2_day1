@@ -1,5 +1,4 @@
 module.exports = function getHTML (options, callback) {
-var https = require('https');   
     var chunks = '';
   //console.log(callback);
   https.get(options, function (response){
@@ -14,6 +13,3 @@ var https = require('https');
   });
 };
 
-function printHTML (html) {
-  console.log(html);
-}
